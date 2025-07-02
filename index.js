@@ -94,6 +94,6 @@ app.use((err, req, res, next) => {
     res.status(500).json({ error: "Error interno del servidor." });
 });
 
-app.listen(PORT, () => {
-    console.log(`API corriendo en http://localhost:${PORT}`);
+app.listen(PORT, '10.0.29.185', () => {
+    console.log(`API disponible en http://10.0.29.185:${PORT}`);
 });
